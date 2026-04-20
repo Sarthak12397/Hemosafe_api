@@ -1,0 +1,6 @@
+@Hemosafeapi_HostAddress = http://localhost:5234
+
+GET {{Hemosafeapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

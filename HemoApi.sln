@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hemosafeapi", "Hemosafeapi.csproj", "{8694D110-839D-33EF-D11A-D87BB878349A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8694D110-839D-33EF-D11A-D87BB878349A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8694D110-839D-33EF-D11A-D87BB878349A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8694D110-839D-33EF-D11A-D87BB878349A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8694D110-839D-33EF-D11A-D87BB878349A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A247A228-3CD8-483C-A7CD-8F62BCFEE8E9}
+	EndGlobalSection
+EndGlobal
