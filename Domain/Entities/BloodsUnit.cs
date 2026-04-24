@@ -2,7 +2,7 @@ using System.ComponentModel;
 
 public class BloodsUnit
 {
-    public Guid id
+    public Guid Id
     {
         get; private set;
     }
@@ -49,7 +49,7 @@ public class BloodsUnit
     {
         get; private set;
     }
-    public DateTime issuedAt
+    public DateTime IssuedAt
     {
         get; private set;
     }
@@ -58,8 +58,43 @@ public class BloodsUnit
     {
         get; private set;
     }
-    public int version
+    public int Version
     {
         get; set;
     }
+
+
+public BloodsUnit(
+    Guid id,
+    BloodTypes bloodType,
+    RhFactor rhFactor,
+    int volumeML,
+    DateTime collectedAt,
+    DateTime expiryAt,
+    Bloodstatus status,
+    Guid donorId,
+    string? storageLocation = null,
+    Guid? reservedForRequestId = null,
+    DateTime? reservedAt = null,
+    DateTime? issuedAt = null,
+    DateTime? transfusedAt = null,
+    int version = 1)
+{
+    Id = id;
+    BloodType = bloodType;
+    RhFactor = rhFactor;
+    VolumeML = volumeML;
+    CollectedAt = collectedAt;
+    ExpiryAt = expiryAt;
+    this.status = status;
+    DonorId = donorId;
+    StorageLocation = storageLocation;
+
+    ReservedForRequestId = reservedForRequestId ?? Guid.Empty;
+    ReservedAt = reservedAt ?? DateTime.MinValue;
+    IssuedAt = issuedAt ?? DateTime.MinValue;
+    Transfuedat = transfusedAt ?? DateTime.MinValue;
+
+    Version = version;
+}
 }
